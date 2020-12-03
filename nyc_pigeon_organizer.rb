@@ -5,14 +5,16 @@ def nyc_pigeon_organizer(data)
     #binding.pry
     value.each do |inner_key, names|
       names.each do |name|
-        binding.pry
+        #binding.pry
         if !final_array[name]
           !final_array[name] = {}
       end
       if !final_array[name][key]
         !final_array[name][key] = []
 end
-final_array
+final_array[name][key].push(inner_key)
+end
+end
 end
   binding.pry
 end
